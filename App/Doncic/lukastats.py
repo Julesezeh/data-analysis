@@ -8,7 +8,13 @@ if season == "O":
     proceed = True
 elif season == "R":
     data = pd.read_csv("LukaRecent.csv")
-    proceed=True
+    three_point_shooting_stats = data.loc[:,["Date","3P","3PA","Opp","PTS"]]
+    field_goals_stats = data.loc[:,["Date","FG","FGA","Opp","PTS"]]
+    print(three_point_shooting_stats)
+    print("\n\n\n")
+    print(field_goals_stats)
+
+
 else:
     "Invalid"
 
