@@ -6,8 +6,10 @@ data =  pd.read_csv("Boston_regular_season_2023.csv")
 # print(data)
 
 
-scores = data.loc[:,["Opponent","Date","Tm","Opp"]]
+scores = data.loc[:]
 
-print(scores.loc[scores['Opponent']=="Washington Wizards"])
+
+opponent = input("Opp?")
+print(scores.loc[scores['Opponent']==opponent])
 # print(scores)
 # print(scores.loc[:,"Tm"])
