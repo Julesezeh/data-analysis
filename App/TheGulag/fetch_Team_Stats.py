@@ -15,7 +15,7 @@ if team in teams.keys():
         year = re.search(r"\d{4}",team_url).group()
         print("worked",year)
 
-        table = ["Playoff","Regular_season" ]
+        table = ["Regular_season","Playoff" ]
         count=0
         for datum in data:
             datum.to_csv(team+"_"+year+"_"+table[count]+"_stats.csv")
