@@ -5,5 +5,5 @@ data = pd.read_html("https://www.basketball-reference.com/players/w/watanyu01/ga
 
 count = 0 
 for datum in data:
-    datum.to_csv(f"Watanabe{count}")
+    datum.to_csv(f"Watanabe{count}.csv")
     count+=1
